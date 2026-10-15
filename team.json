@@ -1,0 +1,10 @@
+{
+  "roles": {
+    "architect": "user-bcp-student06",
+    "backend": "user-bcp-student32",
+    "frontend": "user-bcp-student09",
+    "testing": "user-bcp-student39",
+    "security": "user-bcp-student38",
+    "chapter": "user-bcp-student12"
+  }
+}
