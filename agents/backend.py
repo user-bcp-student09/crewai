@@ -7,7 +7,7 @@ LABEL = 'Desarrollador backend'
 SPEC_FILE = 'backend_spec.md'
 EXTRACT_CODE = True
 
-INSTRUCTIONS = "Realiza la tarea de tu rol."
+INSTRUCTIONS = "Implementa servicios, endpoints, validaciones y acceso a datos según los contratos aprobados de Arquitectura y Datos. En equipos de seis también cubre la persistencia."
 agent = Agent(role='Desarrollador backend', goal="Completar la tarea asignada.",
               backstory="Eres un integrante del equipo.", llm=llm,
               verbose=True, allow_delegation=False)
@@ -18,3 +18,5 @@ def build_task(feature: dict) -> Task:
                 + "\n" + str(feature.get("description", ""))
                 + "\n" + str(feature.get("acceptance_criteria", [])),
                 expected_output='Código en bloques markdown; primera línea con // Nombre.java y package pe.bcp.login.service.', agent=agent)
+
+
