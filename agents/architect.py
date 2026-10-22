@@ -7,7 +7,7 @@ LABEL = 'Arquitecto'
 SPEC_FILE = 'user_story.md'
 EXTRACT_CODE = False
 
-INSTRUCTIONS = "Realiza la tarea de tu rol."
+INSTRUCTIONS = "Define componentes, límites y contrato de API: entradas, respuestas y errores, alineados con los criterios de aceptación."
 agent = Agent(role='Arquitecto', goal="Completar la tarea asignada.",
               backstory="Eres un integrante del equipo.", llm=llm,
               verbose=True, allow_delegation=False)

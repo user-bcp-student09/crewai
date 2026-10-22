@@ -7,7 +7,7 @@ LABEL = 'Chapter'
 SPEC_FILE = 'chapter_review.md'
 EXTRACT_CODE = False
 
-INSTRUCTIONS = "Realiza la tarea de tu rol."
+INSTRUCTIONS = "Contrasta requerimiento, arquitectura, datos, código, pruebas y seguridad; emite un veredicto con motivos y correcciones. Conserva las aprobaciones humanas."
 agent = Agent(role='Chapter', goal="Completar la tarea asignada.",
               backstory="Eres un integrante del equipo.", llm=llm,
               verbose=True, allow_delegation=False)
