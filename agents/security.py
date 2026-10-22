@@ -7,7 +7,7 @@ LABEL = 'Revisor de seguridad'
 SPEC_FILE = 'security_report.md'
 EXTRACT_CODE = False
 
-INSTRUCTIONS = "Realiza la tarea de tu rol."
+INSTRUCTIONS = "Revisa autenticación, autorización, entradas, secretos, datos sensibles e inyección; entrega hallazgos, correcciones y comprobaciones"
 agent = Agent(role='Revisor de seguridad', goal="Completar la tarea asignada.",
               backstory="Eres un integrante del equipo.", llm=llm,
               verbose=True, allow_delegation=False)
