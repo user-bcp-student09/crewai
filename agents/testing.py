@@ -7,7 +7,8 @@ LABEL = 'Ingeniero de pruebas'
 SPEC_FILE = 'testing_report.md'
 EXTRACT_CODE = True
 
-INSTRUCTIONS = "Realiza la tarea de tu rol."
+INSTRUCTIONS = """Convierte criterios de aceptación en pruebas positivas, negativas, de borde e integración; propone comandos y distingue resultados reales de NO EJECUTADO."""
+
 agent = Agent(role='Ingeniero de pruebas', goal="Completar la tarea asignada.",
               backstory="Eres un integrante del equipo.", llm=llm,
               verbose=True, allow_delegation=False)
